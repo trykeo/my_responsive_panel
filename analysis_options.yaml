@@ -1,0 +1,14 @@
+include: package:lint/analysis_options.yaml
+
+analyzer:
+  exclude: [lib/generated_plugin_registrant.dart]
+  errors:
+    missing_required_param: error
+    argument_type_not_assignable: warning
+
+linter:
+  rules:
+    sort_pub_dependencies: false
+    no_logic_in_create_state: false
+    always_use_package_imports: false
+
