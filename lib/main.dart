@@ -4,7 +4,7 @@ import 'package:my_responsive_panel/constants.dart';
 import 'package:my_responsive_panel/screens/main/main_screen.dart';
 import 'package:provider/provider.dart';
 
-import 'controllers/MenuController.dart';
+import 'controllers/menu_controller.dart';
 
 void main() {
   runApp(const MyApp());

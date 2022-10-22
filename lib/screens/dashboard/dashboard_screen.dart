@@ -2,7 +2,7 @@ import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:my_responsive_panel/constants.dart';
-import 'package:my_responsive_panel/models/RecentFile.dart';
+import 'package:my_responsive_panel/models/recent_file.dart';
 import 'package:my_responsive_panel/responsive.dart';
 
 import 'components/Header.dart';

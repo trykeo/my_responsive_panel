@@ -1,5 +1,8 @@
 class RecentFile {
-  final String icon, title, date, size;
+  final String icon;
+  final String title;
+  final String date;
+  final String size;
 
   RecentFile({
     required this.icon,

@@ -3,7 +3,7 @@ import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
 
 import '../../../constants.dart';
-import '../../../controllers/MenuController.dart';
+import '../../../controllers/menu_controller.dart';
 import '../../../responsive.dart';
 
 class Header extends StatelessWidget {

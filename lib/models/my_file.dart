@@ -3,8 +3,11 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 
 class CloudStorageInfo {
-  final String svgSrc, title, totalStorage;
-  final int numOfFiles, percentage;
+  final String svgSrc;
+  final String title;
+  final String totalStorage;
+  final int numOfFiles;
+  final int percentage;
   final Color color;
 
   CloudStorageInfo({
