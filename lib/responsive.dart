@@ -55,6 +55,7 @@ class Responsive extends StatelessWidget {
 
   // This isMobile, isTablet, isDesktop helep us later
   static bool isMobile(BuildContext context) =>
+      MediaQuery.of(context).size.width >= 678 &&
       MediaQuery.of(context).size.width < 850;
 
   static bool isTablet(BuildContext context) =>

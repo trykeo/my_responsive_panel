@@ -1,12 +1,11 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-import '../../constants.dart';
-import '../../models/recent_file.dart';
-import '../../responsive.dart';
 
+import '../../constants.dart';
+import '../../responsive.dart';
 import 'components/header_widget.dart';
 import 'components/my_file.dart';
+import 'components/recent_file_widget.dart';
 import 'components/storage_detail.dart';
 
 class Dashboardscreen extends StatelessWidget {
@@ -66,42 +65,7 @@ class Dashboardscreen extends StatelessWidget {
                       const SizedBox(
                         height: defaultPadding,
                       ),
-                      Container(
-                        padding: const EdgeInsets.all(
-                          defaultPadding,
-                        ),
-                        decoration: const BoxDecoration(
-                          color: secondaryColor,
-                          borderRadius: BorderRadius.all(Radius.circular(10)),
-                        ),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              'Recent Files',
-                              style: Theme.of(context).textTheme.subtitle1,
-                            ),
-                            SizedBox(
-                              width: double.infinity,
-                              child: DataTable(
-                                horizontalMargin: 0,
-                                columnSpacing: defaultPadding,
-                                columns: const [
-                                  DataColumn(label: Text("File Name")),
-                                  DataColumn(label: Text("Date")),
-                                  DataColumn(label: Text("Size")),
-                                ],
-                                rows: List.generate(
-                                  demoRecentFiles.length,
-                                  (index) => recentFileDataRow(
-                                    demoRecentFiles[index],
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
+                      const BodyDashBoard(),
                       if (Responsive.isMobile(context))
                         const SizedBox(
                           height: defaultPadding,
@@ -128,34 +92,6 @@ class Dashboardscreen extends StatelessWidget {
           ],
         ),
       ),
-    );
-  }
-
-  DataRow recentFileDataRow(RecentFile fileInfo) {
-    return DataRow(
-      cells: [
-        DataCell(
-          Row(
-            children: [
-              SvgPicture.asset(
-                fileInfo.icon,
-                height: 30,
-                width: 30,
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: defaultPadding,
-                ),
-                child: Text(
-                  fileInfo.title,
-                ),
-              )
-            ],
-          ),
-        ),
-        DataCell(Text(fileInfo.date)),
-        DataCell(Text(fileInfo.size)),
-      ],
     );
   }
 }
