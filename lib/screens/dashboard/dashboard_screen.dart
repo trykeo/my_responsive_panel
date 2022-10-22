@@ -5,7 +5,7 @@ import 'package:my_responsive_panel/constants.dart';
 import 'package:my_responsive_panel/models/recent_file.dart';
 import 'package:my_responsive_panel/responsive.dart';
 
-import 'components/Header.dart';
+import 'components/header_widget.dart';
 import 'components/my_file.dart';
 import 'components/storage_detail.dart';
 
@@ -51,7 +51,7 @@ class Dashboardscreen extends StatelessWidget {
         padding: const EdgeInsets.all(defaultPadding),
         child: Column(
           children: [
-            const Header(),
+            const HeaderWidget(),
             const SizedBox(
               height: defaultPadding,
             ),

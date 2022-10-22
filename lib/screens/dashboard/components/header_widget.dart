@@ -6,8 +6,8 @@ import '../../../constants.dart';
 import '../../../controllers/menu_controller.dart';
 import '../../../responsive.dart';
 
-class Header extends StatelessWidget {
-  const Header({
+class HeaderWidget extends StatelessWidget {
+  const HeaderWidget({
     super.key,
   });
 
