@@ -1,8 +1,8 @@
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
-import 'package:my_responsive_panel/screens/dashboard/components/chart.dart';
 
 import '../../../constants.dart';
+import 'chart.dart';
 import 'storage_info_card.dart';
 
 class StorageDetail extends StatelessWidget {

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
-import 'package:my_responsive_panel/constants.dart';
-import 'package:my_responsive_panel/screens/main/main_screen.dart';
 import 'package:provider/provider.dart';
 
+import 'constants.dart';
 import 'controllers/menu_controller.dart';
+import 'screens/main/main_screen.dart';
 
 void main() {
   runApp(const MyApp());

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:my_responsive_panel/controllers/menu_controller.dart';
-import 'package:my_responsive_panel/responsive.dart';
 import 'package:provider/provider.dart';
 
-import './components/size_menu.dart';
+import '../../controllers/menu_controller.dart';
+import '../../responsive.dart';
 import '../dashboard/dashboard_screen.dart';
+import 'components/size_menu.dart';
 
 class MainScreen extends StatelessWidget {
   @override
